@@ -1,0 +1,13 @@
+{
+  "name": "military-asset-management",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Monorepo with React+Tailwind client and Node.js+Express+MongoDB server",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
