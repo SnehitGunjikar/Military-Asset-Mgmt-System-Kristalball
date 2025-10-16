@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import api from '../services/api'
 import { storage } from '../utils/storage'
-import { roles } from '../utils/roles'
 
 const AuthContext = createContext(null)
 
@@ -31,15 +30,6 @@ export function AuthProvider({ children }) {
   const login = async (email, password) => {
     setLoading(true)
     try {
-      // Demo login fallback
-      if (email === 'testuser01@gmail.com' && password === '123456') {
-        const demoUser = { name: 'Test User', email, role: roles.Admin }
-        setToken('demo-jwt-token')
-        setUser(demoUser)
-        setRole(demoUser.role)
-        return { success: true }
-      }
-
       const { data } = await api.post('/auth/login', { email, password })
       setToken(data?.token)
       setUser(data?.user)

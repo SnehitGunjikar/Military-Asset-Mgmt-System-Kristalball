@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <span className="text-xl font-semibold text-emerald-700">Military Asset Management</span>
-          <span className="hidden sm:inline text-xs px-2 py-1 rounded bg-emerald-100 text-emerald-700">Frontend</span>
+          <span className="hidden sm:inline text-xs px-2 py-1 rounded bg-emerald-100 text-emerald-700">Jai Ho!</span>
         </div>
         <div className="flex items-center gap-4">
           {user && (

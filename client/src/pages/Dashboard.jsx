@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import api from '../services/api'
 import SummaryCard from '../components/SummaryCard'
 
-const bases = ['Alpha', 'Bravo', 'Charlie']
-const equipmentTypes = ['Rifle', 'Ammo', 'Medkit', 'Radio']
+const bases = ['Alpha', 'Bravo', 'Charlie', 'Delta', 'Echo']
+const equipmentTypes = ['Rifle', 'Ammo', 'Medkit', 'Radio', 'Other']
 
 export default function Dashboard() {
   const [filters, setFilters] = useState({ startDate: '', endDate: '', base: '', equipmentType: '' })
