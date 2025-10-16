@@ -5,7 +5,7 @@ services:
     plan: free
     region: oregon
     rootDir: server
-    buildCommand: npm install
+    buildCommand: npm ci
     startCommand: npm start
     autoDeploy: true
     healthCheckPath: /health
@@ -17,6 +17,6 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: CORS_ORIGIN
-        value: http://localhost:5173
+        value: http://localhost:5173,https://military-asset-mgmt-system-kristalb.vercel.app
       - key: MONGO_URI
         fromSecret: MONGO_URI
