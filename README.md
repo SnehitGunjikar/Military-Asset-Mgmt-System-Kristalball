@@ -5,6 +5,10 @@ A full-stack application to manage military assets across bases, including purch
 **Frontend**: React + Vite + Tailwind CSS
 **Backend**: Node.js + Express + MongoDB (Mongoose)
 
+## Deployment Links
+- FrontEnd - https://military-asset-mgmt-system-kristalb.vercel.app
+- Backend - https://military-asset-mgmt-system-kristalball.onrender.com/
+
 ## Features
 - Authentication using JWT; client stores token in `localStorage` and attaches it via Axios interceptor
 - Role-based access control on routes: `Admin`, `BaseCommander`, `LogisticsOfficer`, `Viewer`
